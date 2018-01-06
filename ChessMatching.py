@@ -2,6 +2,7 @@ from PIL import Image
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+import sys
 
 class ChessMatching(object):
     def __init__(self):
@@ -40,11 +41,12 @@ class ChessMatching(object):
             plt.suptitle("TM_CCOEFF_NORMED")
             plt.show()
 
-        #return the chess center
-        return ((top_left[0]+bottom_right[0])/2, (top_left[1]+bottom_right[1])/2)
+        #return the chess basecenter 
+        return ((top_left[0]+bottom_right[0])/2, bottom_right[1])
 
 if __name__ == '__main__':
+    print("Usage: ChessMatching.py filename")
     chess_matching = ChessMatching()
-    chess_center = chess_matching.matching('asserts/jump.png')
-    print("chess_center:", chess_center)
+    chess_basecenter = chess_matching.matching(sys.argv[1])
+    print("chess_basecenter:", chess_basecenter)
     
