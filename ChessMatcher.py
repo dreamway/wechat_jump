@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import sys
 
-class ChessMatching(object):
+class ChessMatcher(object):
     def __init__(self):
         self.matching_method = 'cv2.TM_CCOEFF_NORMED'
         self.template = cv2.imread('asserts/chess.png', 0)
@@ -45,8 +45,8 @@ class ChessMatching(object):
         return ((top_left[0]+bottom_right[0])/2, bottom_right[1])
 
 if __name__ == '__main__':
-    print("Usage: ChessMatching.py filename")
-    chess_matching = ChessMatching()
+    print("Usage: ChessMatcher.py filename")
+    chess_matching = ChessMatcher()
     chess_basecenter = chess_matching.matching(sys.argv[1])
     print("chess_basecenter:", chess_basecenter)
     

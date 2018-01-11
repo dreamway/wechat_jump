@@ -11,9 +11,12 @@ Now can see the chess jump. Good start point
 
 ## recognize the captured image & calc the distance
 1. Chess shape & recording
+ChessMatching.py 
 
+2. BaseDetection
+BaseDetector.py
 
-2. 
+3. the whole process
 
 
 
@@ -28,9 +31,6 @@ Now can see the chess jump. Good start point
 [1] http://blog.blecentral.com/2015/07/01/simulate-user-generated-events-in-android/
 
 [2] http://blog.csdn.net/jgw2008/article/details/52913543, Android touch event
-
-[3] https://jingyan.baidu.com/article/3c48dd3490f110e10be358dc.html
-GIMP & alpha adding , foreground selection
 
 [4]. https://jingyan.baidu.com/article/93f9803f062990e0e56f557a.html
 Use Gimp & Mask to generate the foreground image
